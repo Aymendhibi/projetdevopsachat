@@ -14,8 +14,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class StockServiceImplTest {
-<<<<<<< Updated upstream:src/test/java/tn/esprit/rh/achat/services/StockServiceImplTest.java
-=======
     /*
 >>>>>>> Stashed changes:achat/src/test/java/tn/esprit/rh/achat/services/StockServiceImplTest.java
     @Autowired
@@ -85,5 +83,4 @@ class StockServiceImplTest {
     }
 
      */
->>>>>>> Stashed changes:achat/src/test/java/tn/esprit/rh/achat/services/StockServiceImplTest.java
 }
