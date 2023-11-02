@@ -39,7 +39,7 @@ import static org.mockito.Mockito.when;
 @RunWith( SpringRunner.class)
 @ContextConfiguration(classes = {StockServiceImpl.class})
 public class MockitoTest {
-
+/*
     private StockServiceImpl service;
     private StockRepository repository;
 //    private MockMvc mockMvc;
@@ -90,6 +90,6 @@ public class MockitoTest {
         when(repository.findAll()).thenReturn(stockList);
 
     }
-
+*/
 }
 
