@@ -28,6 +28,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith(SpringExtension.class)
 public class ProduitTest {
 
+
     @MockBean
    private CategorieProduitRepository categorieProduitRepository;
 
