@@ -58,7 +58,7 @@ pipeline {
 
              stage('push image') {
                     steps{
-                        sh 'sudo docker push taharelarbi/devopsachat:$BUILD_NUMBER'
+                        sh 'docker push taharelarbi/devopsachat:$BUILD_NUMBER'
                     }
                 }
 
