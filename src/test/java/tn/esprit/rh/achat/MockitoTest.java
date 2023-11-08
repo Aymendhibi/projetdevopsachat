@@ -1,4 +1,4 @@
-
+/*
 package tn.esprit.rh.achat;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -37,8 +37,8 @@ import static org.mockito.Mockito.when;
 
 
 @RunWith( SpringRunner.class)
-@ContextConfiguration(classes = {StockServiceImpl.class})
-public class MockitoTest {
+@ContextConfiguration(classes = {StockServiceImpl.class}
+public class MockitoTest {)*/
 /*
     private StockServiceImpl service;
     private StockRepository repository;
@@ -90,6 +90,7 @@ public class MockitoTest {
         when(repository.findAll()).thenReturn(stockList);
 
     }
-*/
+
 }
 
+*/
