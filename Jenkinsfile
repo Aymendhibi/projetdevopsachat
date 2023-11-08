@@ -51,7 +51,7 @@ pipeline {
                 }
         	 stage('login to dockerhub') {
                     steps{
-                        sh 'docker login -u taharelarbi -p taharelarbi12'
+                        sh 'docker login -u taharelarbi -p taherelarbi12'
 
                     }
                 }
