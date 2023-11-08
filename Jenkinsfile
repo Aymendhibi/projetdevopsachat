@@ -1,13 +1,13 @@
 pipeline {
 environment {
-    /*DOCKERHUB_CREDENTIALS = credentials('dockerid')*/
+    DOCKERHUB_CREDENTIALS = credentials('dockerid')
 
 
     }
     agent any
 
     stages {
-         stage('Display pom.xml') {
+        /* stage('Display pom.xml') {
             steps {
                 script {
                     def pomContent = readFile('pom.xml')
@@ -42,7 +42,7 @@ environment {
             steps {
                 sh 'mvn clean deploy -DskipTests=true'
             }
-        }
+        }*/
         stage('Build docker image') {
                     steps {
 
