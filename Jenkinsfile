@@ -7,7 +7,7 @@ environment {
     agent any
 
     stages {
-        /* stage('Display pom.xml') {
+         stage('Display pom.xml') {
             steps {
                 script {
                     def pomContent = readFile('pom.xml')
@@ -42,8 +42,8 @@ environment {
             steps {
                 sh 'mvn clean deploy -DskipTests=true'
             }
-        }*/
-        stage('Build docker image') {
+        }
+        /*stage('Build docker image') {
                     steps {
 
                         sh 'docker build -t taherelarbi/DevopsAchat:$BUILD_NUMBER .'
@@ -59,7 +59,7 @@ environment {
                     steps{
                         sh 'sudo docker push taherelarbi/DevopsAchat:$BUILD_NUMBER'
                     }
-                }
+                }*/
 
     }
 }
