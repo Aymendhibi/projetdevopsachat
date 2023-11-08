@@ -43,13 +43,13 @@ pipeline {
                 sh 'mvn clean deploy -DskipTests=true'
             }
         }
-        /*stage('Build docker image') {
+        stage('Build docker image') {
                     steps {
 
                         sh 'docker build -t taherelarbi/DevopsAchat:$BUILD_NUMBER .'
                     }
                 }
-        	 stage('login to dockerhub') {
+        	 /*stage('login to dockerhub') {
                     steps{
                         sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
                     }
