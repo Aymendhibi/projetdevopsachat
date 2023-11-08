@@ -1,9 +1,9 @@
 pipeline {
- environment {
+ /*environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerid')
 
 
-    }
+    }*/
     agent any
 
     stages {
@@ -51,7 +51,7 @@ pipeline {
                 }
         	 stage('login to dockerhub') {
                     steps{
-                        sh 'echo "taherelarbi12" | sudo -S docker login -u taharelarbi --password-stdin'
+                        sh 'docker login -u taharelarbi -p taharelarbi12'
 
                     }
                 }
