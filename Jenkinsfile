@@ -46,7 +46,7 @@ pipeline {
         stage('Build docker image') {
                     steps {
 
-                        sh 'docker build -t taherelarbi/DevopsAchat:$BUILD_NUMBER .'
+                        sh 'docker build -t taharelarbi/DevopsAchat:$BUILD_NUMBER .'
                     }
                 }
         	 /*stage('login to dockerhub') {
