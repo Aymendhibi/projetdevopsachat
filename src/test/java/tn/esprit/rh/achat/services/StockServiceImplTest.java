@@ -11,18 +11,17 @@ import tn.esprit.rh.achat.repositories.StockRepository;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class StockServiceImplTest {
-    /*
->>>>>>> Stashed changes:achat/src/test/java/tn/esprit/rh/achat/services/StockServiceImplTest.java
+
     @Autowired
     private StockServiceImpl stockService;
     @Autowired
     private StockRepository stockRepository;
-<<<<<<< Updated upstream:src/test/java/tn/esprit/rh/achat/services/StockServiceImplTest.java
-   
-=======
+
+
     @Test
     void retrieveAllStocks() {
         List<Stock> stocks = stockService.retrieveAllStocks();
@@ -36,6 +35,7 @@ class StockServiceImplTest {
         Stock addedStock = stockRepository.findById(stock.getIdStock()).orElse(null);
         assertNotNull(addedStock);
     }
+
     @Test
     void deleteStock() {
         Stock stock = new Stock("Stock6", 30, 12);
@@ -44,6 +44,7 @@ class StockServiceImplTest {
         Stock deletedStock = stockRepository.findById(stock.getIdStock()).orElse(null);
         assertNull(deletedStock);
     }
+
     @Test
     void updateStock() {
         Stock stock = new Stock("Stock7", 35, 15);
@@ -58,6 +59,7 @@ class StockServiceImplTest {
         assertEquals(40, updatedStock.getQte());
         assertEquals(20, updatedStock.getQteMin());
     }
+
     @Test
     void retrieveStock() {
         Stock stock = new Stock("Stock8", 45, 18);
@@ -68,6 +70,7 @@ class StockServiceImplTest {
         assertEquals(45, retrievedStock.getQte());
         assertEquals(18, retrievedStock.getQteMin());
     }
+
     @Test
     void retrieveStatusStock() {
 
@@ -77,10 +80,10 @@ class StockServiceImplTest {
         stockRepository.save(stock2);
         String statusMessage = stockService.retrieveStatusStock();
         assertNotNull(statusMessage);
-      assertTrue(statusMessage.contains("le stock Stock1 a une quantité de 5 inférieur à la quantité minimale a ne pas dépasser de 10"));
+        assertTrue(statusMessage.contains("le stock Stock1 a une quantité de 5 inférieur à la quantité minimale a ne pas dépasser de 10"));
         assertTrue(statusMessage.contains("le stock Stock2 a une quantité de 8 inférieur à la quantité minimale a ne pas dépasser de 15"));
 
     }
 
-     */
+
 }
