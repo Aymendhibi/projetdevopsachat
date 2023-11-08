@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: FactureTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in FactureTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.091 s <<< FAILURE! - in FactureTest
+testRetrieveAllFactures  Time elapsed: 0.08 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.rh.achat.repositories.FactureRepository.findAll()" because "this.factureRepository" is null
+	at FactureTest.testRetrieveAllFactures(FactureTest.java:27)
+
