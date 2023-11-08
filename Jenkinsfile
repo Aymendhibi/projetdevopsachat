@@ -1,9 +1,9 @@
 pipeline {
-environment {
-    /*DOCKERHUB_CREDENTIALS = credentials('dockerid')*/
+/*environment {
+    DOCKERHUB_CREDENTIALS = credentials('dockerid')
 
 
-    }
+    }*/
     agent any
 
     stages {
